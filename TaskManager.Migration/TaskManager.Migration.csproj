@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Migration170620171217.cs" />
+    <Compile Include="Migration170620171441.cs" />
     <Compile Include="MigrationsRunner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
