@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
 
 namespace TaskManager
 {
@@ -9,8 +6,10 @@ namespace TaskManager
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
+            //Run Migration
+            Migration.MigrationsRunner.Run();
 
+            // Web API configuration and services
             // Web API routes
             config.MapHttpAttributeRoutes();
 
