@@ -67,7 +67,7 @@ namespace TaskManager.DataAccess
             {
                 var sql = @"SELECT * 
                             FROM [dbo].[Tasks] 
-                            Where Id = @Id";
+                            Where Id = @Id AND IsDeleted = false";
 
                 var sqlParam = new {Id = id};
 
