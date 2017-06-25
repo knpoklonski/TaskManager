@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
-  template: `
-    <span>hello</span>
-    `
+  selector: 'task-manager',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
 })
 
 export class AppComponent {
